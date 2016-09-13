@@ -1,2 +1,20 @@
 #BlueJ class context
-numComments=0
+comment0.params=first\ last
+comment0.target=PersonCreator(java.lang.String,\ java.lang.String)
+comment1.params=years
+comment1.target=void\ getAge(int)
+comment2.params=userSex
+comment2.target=void\ getSex(java.lang.String)
+comment3.params=inches
+comment3.target=void\ getHeight(int)
+comment4.params=pounds
+comment4.target=void\ getWeight(int)
+comment5.params=userSocialSecurityNumber
+comment5.target=void\ getSocialSecurityNumber(java.lang.String)
+comment6.params=housenumber\ streetname\ city\ state\ zipcode
+comment6.target=void\ getAddress(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment7.params=userPhonenumber
+comment7.target=void\ getPhoneNumber(java.lang.String)
+comment8.params=userDob
+comment8.target=void\ getDob(java.lang.String)
+numComments=9
