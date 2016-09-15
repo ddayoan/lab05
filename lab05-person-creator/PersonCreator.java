@@ -1,4 +1,4 @@
-
+  
 /**
  * I am creating a person.
  * 
@@ -50,9 +50,17 @@ public class PersonCreator
         weight= pounds;
     }
     
-    public void getSocialSecurityNumber(String userSocialSecurityNumber)
+    public void getSocialSecurityNumber(int firstNum, int secondNum, int thirdNum)
     {
-        socialSecurityNumber= userSocialSecurityNumber;
+        if (firstNum < 100 || firstNum > 999) {
+            System.err.println("Please use a valid number");
+        } else if (secondNum < 10 || secondNum > 99) {
+            System.err.println("Please use a valid number");
+        } else if (thirdNum < 1000 || thirdNum > 9999) {
+            System.err.println("Please use a valid number");
+        } else {
+        socialSecurityNumber= firstNum + "-" + secondNum + "-" + thirdNum;
+    }
     }
     
     public void getAddress(String housenumber, String streetname, String city, String state, String zipcode)
@@ -60,13 +68,37 @@ public class PersonCreator
         address= housenumber + streetname + city + state + zipcode;
     }
     
-    public void getPhoneNumber(String userPhonenumber)
+    public void getPhoneNumber(int areaCode, int numBegin, int numEnd)
     {
-        phoneNumber= userPhonenumber;
+        if (areaCode < 100 || areaCode > 999) {
+            System.err.println("Please use a valid number");
+        } else if (numBegin < 100 || numBegin > 999) {
+            System.err.println("Please use a valid number");
+        } else if (numEnd < 1000 || numEnd > 9999) {
+            System.err.println("Please use a valid number");
+        } else {
+        phoneNumber= areaCode + "-" + numBegin + "-" + numEnd;
+    }
     }
     
     public void getDob(String userDob)
     {
         dob= userDob;
+    }
+    
+    /**
+     * Print a ticket
+     */
+    public void printPerson()
+    {
+        System.out.println("name: "+name);
+        System.out.println("age");
+        System.out.println("sex");
+        System.out.println("height");
+        System.out.println("weight");
+        System.out.println("socialSecurityNumber");
+        System.out.println("adress");
+        System.out.println("phoneNumber");
+        System.out.println("dob");
     }
 }
